@@ -15,15 +15,27 @@ A Fullstack browsing Spotify Application
 
 
 # Getting Started
-To see a working example 
+To see a working example
+
+Clone repository:
 
     git clone git@github.com:zacharytaylor-FS/pp3-spotify-template.git
+
+Change into the project:
+
     cd pp3-spotify-template
+
+To install the project, run the following command:
+    
+    npm install
+
+Sync prisma with Schema and generate models
+
+    npx prisma db push
 
 To get up and running...
 
-    npm install
-    npm start
+    npm run dev
 
 # Features
 
