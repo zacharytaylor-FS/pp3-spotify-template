@@ -1,20 +1,23 @@
 # pp3-spotify-template
 
-## Project Overview 
+## Project Overview
+
 A Fullstack browsing Spotify Application
 
 # Prerequisites
 
 ### NodeJS v18
 
-### Express 
+### Express
 
 ### Next v13
 
+### NextUI
+
 ### Axios
 
-
 # Getting Started
+
 To see a working example
 
 Clone repository:
@@ -26,7 +29,7 @@ Change into the project:
     cd pp3-spotify-template
 
 To install the project, run the following command:
-    
+
     npm install
 
 Sync prisma with Schema and generate models
@@ -45,6 +48,7 @@ To get up and running...
 - Check out artists, album, and song callobrations
 
 # Links
-Application can be run locally 
+
+Application can be run locally
 
     http://localhost:3000
