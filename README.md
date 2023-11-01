@@ -1,29 +1,44 @@
-# pp3-spotify-template
+# Fullstack Spotify Search - PP3
 
-## Project Overview 
-A Fullstack browsing Spotify Application
+## Project Overview
+
+This example shows how to implement a **fullstack app in JavaScript with [Next.js](https://nextjs.org/)** using [React](https://reactjs.org/) (frontend), [Next.js API routes](https://nextjs.org/docs/api-routes/introduction) and [Prisma Client](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client) (backend).
 
 # Prerequisites
 
 ### NodeJS v18
 
-### Express 
+### Express
 
-### Next v13
+### Next v14
+
+### NextUI
 
 ### Axios
 
-
 # Getting Started
-To see a working example 
+
+To see a working example
+
+Clone repository:
 
     git clone git@github.com:zacharytaylor-FS/pp3-spotify-template.git
+
+Change into the project:
+
     cd pp3-spotify-template
+
+To install the project, run the following command:
+
+    npm install
+
+Sync prisma with Schema and generate models
+
+    npx prisma db push
 
 To get up and running...
 
-    npm install
-    npm start
+    npm run dev
 
 # Features
 
@@ -33,6 +48,7 @@ To get up and running...
 - Check out artists, album, and song callobrations
 
 # Links
-Application can be run locally 
+
+Application can be run locally
 
     http://localhost:3000
