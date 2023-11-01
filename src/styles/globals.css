@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --spotify-black: #191414;
+  --spotify-white: #ffffff;
+  --spotify-green: #1db954;
+}
+html {
+  background-color: var(--spotify-black);
+  font-family: var(--font-inter);
+}
+
+body {
+  background-color: #191414;
+}
