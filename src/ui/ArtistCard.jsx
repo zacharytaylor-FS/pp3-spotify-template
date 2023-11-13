@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter, Image, Button, Skeleton } from '@nextui-org/react';
 
-export default function ArtistCard() {
+export default function ArtistCard({ artist }) {
   return (
     <div className='max-w-[1000px] gap-5 grid grid-cols-12 grid-rows-2 p-12 mx-auto'>
       <Card className='col-span-12 sm:col-span-4 h-[300px]'>
@@ -15,7 +15,7 @@ export default function ArtistCard() {
           removeWrapper
           alt='Card background'
           className='z-0 w-full h-full object-cover'
-          src='https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=1742&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          src={"image"}
         />
       </Card>
       <Card className='col-span-12 sm:col-span-4 h-[300px]'>

@@ -47,7 +47,7 @@ export default function Nav() {
       </NavbarContent>
       <NavbarContent className=' sm:flex gap-4' justify='end'>
         <NavbarItem className='hidden md:flex'>
-          <Button as={Link} href='#' variant='flat'>
+          <Button as={Link} href='http://localhost:30001/login' variant='primary'>
             Login
           </Button>
         </NavbarItem>
