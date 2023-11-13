@@ -2,6 +2,7 @@ import Link from 'next/link';
 import SpotifyToken from '../ui/SpotifyIcon';
 import Card from '../ui/ArtistCard';
 import NavLinks from '../ui/navigation/NavLinks';
+import User from '../ui/User'
 
 
 const Home = (props) => {
@@ -16,6 +17,7 @@ const Home = (props) => {
       <div>
         <NavLinks />
         <Card />
+        <User />
       </div>
     </div>
   );

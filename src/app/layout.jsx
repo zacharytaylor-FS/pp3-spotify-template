@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={`${inter.variable} min-h-screen`}>
+    <html lang='en' className={`${inter.variable} min-h-screen text-slate-300`}>
       <body>
         <Providers>
           <Nav />
