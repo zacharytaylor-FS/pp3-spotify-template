@@ -1,3 +1,4 @@
-export default function handler(req, res) {
-    res.status(200).json({text: 'Hello, Next.js!'})
+import { NextResponse } from "next/server"
+export async function GET() {
+    return NextResponse.json({'message': 'Hello, Next.js'})
 }

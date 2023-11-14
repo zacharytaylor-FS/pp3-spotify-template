@@ -1,3 +1,4 @@
-export default function handler(req, res) {
-    res.status(200).json({text: 'Callback'})
+import { NextResponse } from "next/server"
+export async function GET() {
+    return NextResponse.json({text: 'Callback API Route!'})
 }
