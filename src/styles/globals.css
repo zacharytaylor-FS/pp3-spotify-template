@@ -7,7 +7,7 @@
   --spotify-white: #ffffff;
   --spotify-green: #1db954;
 }
-html {
+html, body {
   background-color: var(--spotify-black);
   font-family: var(--font-inter);
 }

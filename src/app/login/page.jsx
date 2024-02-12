@@ -1,13 +1,13 @@
-export default function Page() {
-    return (
-      <>
-        <p className="text-5xl text-slate-300 p-6">Login Page</p>;
-        <div className="flex flex-col max-w-sm">
-          <input />
-          <input />
-          <input />
-        </div>
-      </>
-    ) 
-  }
+'use client'
+import React from 'react';
+import LoginForm from '../../ui/LoginForm.jsx';
+export default function Login() {
+  return (
+    <main className="flex items-center justify-center h-screen">
+      <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
+        <LoginForm />
+      </div>
+    </main>
+  );
+}
       

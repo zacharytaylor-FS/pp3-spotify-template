@@ -1,25 +1,41 @@
-import Link from 'next/link';
-import SpotifyToken from '../ui/SpotifyIcon';
-import Card from '../ui/ArtistCard';
-import NavLinks from '../ui/navigation/NavLinks';
-import User from '../ui/User'
+
+import { auth } from '../../auth';
+import ArtistCard from '../ui/card/Artist';
+import SongCard from '../ui/card/Song';
+import Nav from '../ui/navigation/NavBar';
+
+const Home = async () => {
+  const session = await auth()
+
+  const accessToken = session.accessToken
+  console.log(accessToken)
+  const apiUrl = `https://api.spotify.com/v1/tracks/2TpxZ7JUBn3uw46aR7qd6V`
 
 
-const Home = (props) => {
+    const response = await fetch(apiUrl, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`
+      }
+    })
+    const data = await response.json();
+
+    console.log(data)
+  
   return (
-    <div className='flex flex-col h-screen mx-auto'>
-      <div className='flex p-2'>
-        {/* <h1 className="text-3xl font-bold text-[var(--spotify-green)] mr-3">Spotify</h1> */}
-        <Link href='/' className='text-slate-400'>
-          Home Page content
-        </Link>
-      </div>
-      <div>
-        <NavLinks />
-        <Card />
-        <User />
-      </div>
-    </div>
+    <main>
+      <Nav/>
+      <article className='flex flex-col h-screen w-[100%]'>
+        <div className=' flex flex-1 h-[100%]'>
+          <div className='p-6 w-[100%]'>
+          {JSON.stringify(data)}
+          <hr/>
+          {JSON.stringify(session)}
+          <ArtistCard/>
+          <SongCard/>
+        </div>
+        </div>
+      </article>
+    </main>
   );
 };
 

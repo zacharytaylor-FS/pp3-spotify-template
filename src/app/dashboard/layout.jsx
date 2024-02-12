@@ -1,16 +1,14 @@
-import SideNav from "../../ui/navigation/SideNav";
-
+import Nav from '../../ui/navigation/NavBar'
 export default function Layout({children}) {
     return (
+        <>
+        <Nav />
         <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-            <div className="w-full flex-none md:w-64">
-                <SideNav />
-            </div>
-
-            <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
+            <div className="flex-grow md:overflow-y-auto md:p-12">
                 Dashboard Layout
                 {children}
             </div>
         </div>
+        </>
     )
 }

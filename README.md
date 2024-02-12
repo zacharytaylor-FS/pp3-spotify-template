@@ -1,20 +1,32 @@
-# Fullstack Spotify Search - PP3
+<p align="center"><img src="./public/Spotify_Green.png" alt="Logo" width="300" height="300"></p>
+<h1 align="center"> Nextjs 14 Spotify Clone</h1>
 
-## Project Overview
+<!-- ## Project Overview -->
 
-This example shows how to implement a **fullstack app in JavaScript with [Next.js](https://nextjs.org/)** using [React](https://reactjs.org/) (frontend), [Next.js API routes](https://nextjs.org/docs/api-routes/introduction) and [Prisma Client](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client) (backend).
+This web app will use allow a user to login with a Spotify account. Hit[Spotify API](https://developer.spotify.com/documentation/web-api) and dipslay latest artrist, albums, and top tracks. Spotify Clone **fullstack app in JavaScript with [Next.js](https://nextjs.org/)** using [React](https://reactjs.org/) (frontend), [Next.js API routes](https://nextjs.org/docs/api-routes/introduction) and [Prisma Client](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client) (backend).
 
-# Prerequisites
+# Features
 
-### NodeJS v18
+- [x] Authentication/Singup using Spotify.
+- [x] Get user's playlists.
+- [x] Get user's top artists.
+- [x] Get user's top tracks.
+- [x] Get user's recently played tracks.
+- [x] Get user's saved tracks.
+- [x] Responsive design.
+- [x] Dark mode.
+- [x] Search for tracks, artists, albums and playlists.
+- [x] Real time sync with Spotify client.
+- [x] Play/Pause/Next/Previous track.
+- [x] Shuffle/Repeat track.
+- [x] Playlists/Albums/Artists/Tracks page.
+- [x] [YouTube](https://www.youtube.com/watch?v=tQGSlapQ2dk) demo.
 
-### Express
+## Tech Stack
 
-### Next v14
+**Client:** React, Next, TailwindCSS, Prisma
 
-### NextUI
-
-### Axios
+**Server:** Node, Express
 
 # Getting Started
 
@@ -49,6 +61,11 @@ To get up and running...
 
 # Links
 
-Application can be run locally
+The links to the project are as follows: 
 
-    http://localhost:3000
+- [http://localhost:3000](http://localhost:3000) - Link to the frontend (Nuxt.js) application. This is the primary user interface of the Spotify application
+- [http://localhost:3001](http://localhost:3001) - Link to the backend (Express) API.
+- [http://localhost:3001/spotify/v1](http://localhost:3001/spotify/v1) - Link to the Spotify API middleware. 
+- [http://localhost:3001/spotify/v1/status](http://localhost:3001/spotify/v1/status) - Endpoint to check the status of our application's JWT. Returns true if a valid JWT exists. False otherwise.
+- [http://localhost:3001/spotify/v1/login](http://localhost:3001/spotify/v1/login) - Endpoint request a new JWT from Spotify using the authentication workflow
+- [http://localhost:3001/spotify/v1/search](http://localhost:3001/spotify/v1/search) - Endpoint for a general/global search to Spotify. Returns JSON of all results. 

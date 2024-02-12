@@ -28,11 +28,12 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@nextui-org/react": "^2.1.13",
+    "@prisma/client": "^5.7.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "framer-motion": "^10.16.4",
     "next": "^14.0.0",
-    "next-auth": "^4.24.5",
+    "next-auth": "^5.0.0-beta.9",
     "nodemon": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

@@ -1,11 +1,11 @@
 'use client';
+import { Button, Card, CardFooter, CardHeader, Image } from '@nextui-org/react';
 import React from 'react';
-import { Card, CardHeader, CardBody, CardFooter, Image, Button, Skeleton } from '@nextui-org/react';
 
-export default function ArtistCard({ artist }) {
+export default function SongCard({ artist }) {
   return (
     <div className='max-w-[1000px] gap-5 grid grid-cols-12 grid-rows-2 p-12 mx-auto'>
-      <Card className='col-span-12 sm:col-span-4 h-[300px]'>
+      <Card className='col-span-12 sm:col-span-4 h-[200px]'>
         <CardHeader className='absolute z-10 top-1 flex-col !items-start'>
           <p className='text-tiny text-white/60 uppercase font-bold'>What to watch</p>
           <h4 className='text-white font-medium text-large'>Stream the Acme event</h4>
@@ -18,7 +18,7 @@ export default function ArtistCard({ artist }) {
           src={"image"}
         />
       </Card>
-      <Card className='col-span-12 sm:col-span-4 h-[300px]'>
+      <Card className='col-span-12 sm:col-span-4 h-[200px]'>
         <CardHeader className='absolute z-10 top-1 flex-col !items-start'>
           <p className='text-tiny text-white/60 uppercase font-bold'>Plant a tree</p>
           <h4 className='text-white font-medium text-large'>Contribute to the planet</h4>
@@ -31,7 +31,7 @@ export default function ArtistCard({ artist }) {
           src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         />
       </Card>
-      <Card className='col-span-12 sm:col-span-4 h-[300px]'>
+      <Card className='col-span-12 sm:col-span-4 h-[200px]'>
         <CardHeader className='absolute z-10 top-1 flex-col !items-start'>
           <p className='text-tiny text-white/60 uppercase font-bold'>Supercharged</p>
           <h4 className='text-white font-medium text-large'>Creates beauty like a beast</h4>

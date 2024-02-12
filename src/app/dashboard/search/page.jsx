@@ -1,3 +1,9 @@
+import Search from "../../../ui/Searchbar";
+
 export default function Page() {
-    return <p>Search Page</p>;
+    return (
+    <>
+      <Search/>
+    </>
+    )
   }
